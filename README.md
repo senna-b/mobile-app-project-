@@ -451,7 +451,6 @@ Test:
 <img width="720" height="1600" alt="11" src="https://github.com/user-attachments/assets/33a17f22-ce63-465b-baa6-048d38704c22" />
 <img width="1080" height="2400" alt="12" src="https://github.com/user-attachments/assets/fe10a8cc-5c28-43d2-adcd-1c8da61a1874" />
 <img width="1080" height="2400" alt="13" src="https://github.com/user-attachments/assets/8a58172e-ead6-4a1c-a4b2-ae67dcf1c976" />
-<img width="720" height="1600" alt="14" src="https://github.com/user-attachments/assets/dcc944c8-e556-423f-99a0-a0e6a8d6090c" />
 <img width="1080" height="2400" alt="15" src="https://github.com/user-attachments/assets/0400474b-87a5-4ce3-b75d-d7dc0f3cdfbf" />
 <img width="720" height="1600" alt="16" src="https://github.com/user-attachments/assets/9a9db0c0-2b95-4e55-b39a-7d8dcea184d9" />
 
