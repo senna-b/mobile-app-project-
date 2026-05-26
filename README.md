@@ -241,7 +241,7 @@ Architecture Layers
 4.	Database Layer
 5.	Cloud Services
 
-   4.2 Use Cases
+         4.2 Use Cases
 Main Use Cases
 •	Register User
 •	Login
