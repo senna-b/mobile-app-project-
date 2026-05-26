@@ -1,12 +1,12 @@
 # mobile-app-project-
 Event Discovery and Ticket Booking System
 
-GROUP MEMBERS                                        ID NUMBER                               group   
-1. Beamlack Kedir                                    Ugr/33995/16                            4
-2. Sena Birhanu                                      Ugr/35392/16                            4
-3. Tigist Tesfaye                                    Ugr/35503/16                            3
-4. Umera addisu                                      Ugr/35538/16                            3
-5. Wintana yewnet                                    Ugr/35557/16                            3
+GROUP MEMBERS                         ==               ID NUMBER                     ==          group   
+1. Beamlack Kedir                     ==               Ugr/33995/16                  ==           4
+2. Sena Birhanu                       ==               Ugr/35392/16                  ==           4
+3. Tigist Tesfaye                     ==               Ugr/35503/16                  ==           3
+4. Umera addisu                       ==               Ugr/35538/16                  ==           3
+5. Wintana yewnet                     ==               Ugr/35557/16                  ==           3
 
 
          ABSTRACT
