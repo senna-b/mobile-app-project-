@@ -9,14 +9,21 @@ GROUP MEMBERS                           ID NUMBER                   group
 5. Wintana yewnet                     Ugr/35557/16                   3
 
 
-   ABSTRACT
+         ABSTRACT
+
+   
 The Event Discovery & Ticket Booking System is a modern mobile-based platform developed to simplify event discovery, ticket booking, QR-based ticket validation, and event management. The application addresses common problems in traditional event systems such as ticket fraud, poor event visibility, manual registration processes, and inefficient attendee tracking.
 The proposed system provides users with the ability to discover trending events, search by category and location, book tickets securely, receive QR-coded tickets, and receive notifications regarding upcoming events.
 The platform also supports organizers through dashboards that allow event creation, attendee monitoring, analytics tracking, and QR-based ticket verification.
 The system is implemented using Flutter for the frontend, java for the backend and mysql for database management, Firebase Cloud Messaging for notifications.
  
-        CHAPTER 1: INTRODUCTION
+ 
+          CHAPTER 1 INTRODUCTION
+
+        
     1.1 Background
+
+    
 Event management and ticket booking systems have evolved rapidly with the advancement of mobile technology. Traditional methods of event promotion and ticket sales rely heavily on manual operations, paper tickets, and physical attendance verification.
 Modern users demand fast, secure, and mobile-first experiences.
 This project introduces a smart digital event platform that automates:
@@ -26,7 +33,8 @@ This project introduces a smart digital event platform that automates:
   •	Notifications
   •	Analytics
   •	Event management
-    1.2 Problem Definition
+                            
+      1.2 Problem Definition
 Traditional event systems suffer from:
   •	Ticket fraud
   •	Lack of centralized event discovery
@@ -35,7 +43,8 @@ Traditional event systems suffer from:
   •	Long registration queues
   •	Limited analytics
   •	Duplicate ticket issues
-    1.3 Objectives
+               
+            1.3 Objectives
   General Objective
 Develop a secure and scalable mobile-based event discovery and ticket booking system.
 Specific Objectives
@@ -46,7 +55,8 @@ Specific Objectives
   •	Notify users about events
   •	Allow organizers to manage events
   •	Prevent duplicate ticket usage
-    1.4 Scope
+          
+          1.4 Scope
 Included
   •	Mobile application
   •	Organizer dashboard
@@ -56,7 +66,8 @@ Included
   •	Booking management
 
  
-      CHAPTER 2: LITERATURE REVIEW
+         
+         CHAPTER 2: LITERATURE REVIEW
 Existing Systems
 Eventbrite
 Strengths:
@@ -85,8 +96,9 @@ Modern event systems require:
 •	Scalable cloud infrastructure
 
  
-    CHAPTER 3: SYSTEM ANALYSIS
-  3.1 Existing System Analysis
+      
+       CHAPTER 3: SYSTEM ANALYSIS
+     3.1 Existing System Analysis
 Problems Identified
 Problem	Impact
 Manual ticketing	 Slow operations
@@ -95,7 +107,7 @@ Poor event visibility	 Low attendance
 Manual validation	 Long queues
 Lack of analytics	 Poor decisions
 
-  3.2 Proposed System
+     3.2 Proposed System
 The proposed solution introduces:
 •	Mobile-based event discovery
 •	Secure authentication
@@ -105,7 +117,7 @@ The proposed solution introduces:
 •	Cloud-based scalability
 
 
-  3.3 Functional Requirements
+     3.3 Functional Requirements
 User Functions
 •	Register
 •	Login
@@ -126,7 +138,7 @@ Admin Functions
 •	Handle reports
 
 
-  3.4 Non-Functional Requirements
+     3.4 Non-Functional Requirements
 
 Requirement	Description
 Performance	 Fast response time
@@ -136,7 +148,7 @@ Reliability	 Fault-tolerant APIs
 Usability	 User-friendly UI
 Maintainability	 Clean architecture
 
-  3.5 Feasibility Study
+     3.5 Feasibility Study
 Technical Feasibility
 The system can be implemented using Flutter, java, mySQL, Firebase, and cloud hosting.
 Economic Feasibility
@@ -144,7 +156,7 @@ Open-source tools reduce development cost.
 Operational Feasibility
 Users already utilize smartphones for digital services.
 
-  3.6 Risk Analysis
+     3.6 Risk Analysis
 
 Risk	 Mitigation
 Fake QR codes	 Encrypted QR validation
@@ -153,7 +165,7 @@ Duplicate booking	Unique constraints
 Payment fraud	Transaction verification
 Server downtime	Cloud deployment
 
-  3.7 Edge Cases
+     3.7 Edge Cases
 Edge Case	Solution
 Sold-out events	Disable booking
 Duplicate scans	Mark QR as used
@@ -162,7 +174,7 @@ Offline mode	Local storage caching
 Event cancellation	Push notifications
 
     USER RESEARCH
- Interview Questions
+    Interview Questions
 Event Organizers
 1.	How do you currently manage ticket sales?
 2.	What are your biggest event management challenges?
@@ -219,8 +231,9 @@ Does
 •	Shares tickets with friends
 
  
-    CHAPTER 4: SYSTEM DESIGN
-  4.1 System Architecture
+      
+       CHAPTER 4: SYSTEM DESIGN
+     4.1 System Architecture
 Architecture Layers
 1.	Presentation Layer (Flutter)
 2.	Business Logic Layer
@@ -228,7 +241,7 @@ Architecture Layers
 4.	Database Layer
 5.	Cloud Services
 
-  4.2 Use Cases
+   4.2 Use Cases
 Main Use Cases
 •	Register User
 •	Login
@@ -238,10 +251,10 @@ Main Use Cases
 •	Validate Ticket
 •	Manage Events
 
-  4.3 User Flow
+     4.3 User Flow
 User Registration → Login → Browse Events → Event Detail → Ticket Booking → Payment → QR Ticket → Event Entry → QR Validation
 
-  4.4 Activity Diagram Description
+     4.4 Activity Diagram Description
 1.	User opens app
 2.	Searches event
 3.	Selects ticket quantity
@@ -250,16 +263,16 @@ User Registration → Login → Browse Events → Event Detail → Ticket Bookin
 6.	Organizer scans QR
 7.	System validates ticket
 
-  4.5 Sequence Diagram Description
+        4.5 Sequence Diagram Description
 User → Flutter App → API Server → Database → Payment Module → QR Generator → Notification Service
 
-  4.6 Data Flow Diagram
+     4.6 Data Flow Diagram
 Level 0
 User ↔ Mobile App ↔ Backend ↔ Database
 Level 1
 Authentication Process Booking Process QR Validation Process Notification Process
 
-  4.7 ERD
+     4.7 ERD
 Entities
 Users
 •	id
@@ -315,8 +328,8 @@ GET /api/bookings/user
 Validate QR
 POST /api/bookings/validate
 
-  CHAPTER 5: IMPLEMENTATION
-5.1 Development Environment
+     CHAPTER 5: IMPLEMENTATION
+      5.1 Development Environment
 The system was developed using the following software tools and technologies:
 Component	Technology Used
 Frontend Framework	Flutter
@@ -331,7 +344,7 @@ Authentication	JWT + Google Authentication
 Notifications	Firebase Cloud Messaging
 QR Technology	qr_flutter + mobile_scanner
 
-   5.2 System Implementation Overview
+      5.2 System Implementation Overview
 The implementation phase transformed the system design into a fully functional mobile application and backend service.
 The project implementation was divided into the following modules:
 1.	Authentication Module
@@ -342,9 +355,10 @@ The project implementation was divided into the following modules:
 6.	Notification Module
 7.	Booking History Module
 
-    5.3 Frontend Implementation (Flutter)
+          5.3 Frontend Implementation (Flutter)
 The frontend application was implemented using Flutter with Clean Architecture principles.
-    5.4 Authentication Module Implementation
+      
+      5.4 Authentication Module Implementation
 The authentication module allows users to:
 •	Register accounts
 •	Login securely
@@ -358,7 +372,7 @@ Google Login	OAuth authentication
 Session Management	Persistent login state
 
 
-  5.5 Event Discovery Module Implementation
+     5.5 Event Discovery Module Implementation
 The event discovery module enables users to browse and search for events.
 Features Implemented
 •	Event listing
@@ -366,7 +380,8 @@ Features Implemented
 •	Search functionality
 •	Trending events
 •	Event detail pages
-    5.6 Booking Module Implementation
+            
+            5.6 Booking Module Implementation
 The booking module enables users to reserve event tickets.
 Booking Workflow
 1.	User selects an event
@@ -374,7 +389,7 @@ Booking Workflow
 3.	System checks seat availability
 4.	Booking is confirmed
 
-  5.7 QR Validation Module Implementation
+        5.7 QR Validation Module Implementation
 The QR validation system prevents ticket fraud and duplicate ticket usage.
 Validation Process
 The backend verifies:
@@ -383,7 +398,7 @@ The backend verifies:
 •	Duplicate scans
 •	Booking ownership
 
-  5.8 Organizer Dashboard Implementation
+        5.8 Organizer Dashboard Implementation
 The organizer dashboard enables event organizers to:
 •	Create events
 •	Edit events
@@ -396,9 +411,11 @@ Event Creation	Add new events
 Attendee Tracking	Monitor attendees
 Ticket Validation	Scan QR tickets
 Analytics	View booking statistics
-  5.9 Backend Implementation
+          
+           5.9 Backend Implementation
 The backend system was developed using java.
-  5.10 Notification System Implementation
+          
+           5.10 Notification System Implementation
 Firebase Cloud Messaging (FCM) was integrated for push notifications.
 Notifications Included
 •	Booking confirmation
@@ -408,7 +425,7 @@ Notifications Included
 
 
 
-  5.11 Error Handling Implementation
+     5.11 Error Handling Implementation
 The system handles common runtime errors gracefully.
 Errors Handled
 Error	Solution
@@ -419,8 +436,8 @@ Expired ticket	Validation failed
 Sold-out event	Booking disabled
 
 
-  Chapter six : TESTING
-Unit Testing
+     Chapter six : TESTING
+      Unit Testing
 Test Case	Expected Result
 Login with valid credentials	Success
 Invalid password	Error message
